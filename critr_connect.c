@@ -1,6 +1,6 @@
-#include "AzureIotHub.h"
-#include "AZ3166WiFi.h"
-#include <WiFiClientSecure.h>
+//#include "AzureIotHub.h"
+//#include "AZ3166WiFi.h"
+//#include <WiFiClientSecure.h>
 
 const char* ssid     = "YourWiFiSSID";        // Your Wi-Fi SSID
 const char* password = "YourWiFiPassword";    // Your Wi-Fi password
@@ -8,7 +8,7 @@ const char* connectionString = "HostName=YourIoTHub.azure-devices.net;DeviceId=C
 
 void setup() {
   Serial.begin(115200);
-  // Initialize Wi-Fi
+  // Initialize Wi-Fi 
   if(WiFi.begin(ssid, password) == WL_CONNECTED) {
     Serial.println("Connected to Wi-Fi");
   } else {
